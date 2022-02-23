@@ -9,12 +9,17 @@ import androidx.recyclerview.widget.RecyclerView
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ListViewHolder>() {
 
     private var listUsers = ArrayList<UserModel>()
+    private lateinit var onItemClickCallback: OnItemClickCallback
 
     fun setListUsers(users: ArrayList<UserModel>) {
         with(listUsers) {
             clear()
             addAll(users)
         }
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
     }
 
     override fun onCreateViewHolder(
@@ -27,7 +32,11 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ListViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        holder.bind(listUsers[position])
+        val user = listUsers[position]
+        holder.bind(user)
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(user)
+        }
     }
 
     override fun getItemCount(): Int = listUsers.size
@@ -41,5 +50,9 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ListViewHolder>() {
                 imgItemProfile.setImageResource(user.avatar)
             }
         }
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(user: UserModel)
     }
 }
