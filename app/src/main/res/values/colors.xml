@@ -13,4 +13,5 @@
     <color name="sunglow_200">#FFFD78</color>
     <color name="sunglow_500">#fCCa46</color>
     <color name="sunglow_700">#C59A03</color>
+    <color name="grey">#757575</color>
 </resources>
