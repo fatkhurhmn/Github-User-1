@@ -1,5 +1,6 @@
-package academy.bangkit.githubuser
+package academy.bangkit.githubuser.utils
 
+import academy.bangkit.githubuser.R
 import academy.bangkit.githubuser.model.UserModel
 import android.annotation.SuppressLint
 import android.content.Context
