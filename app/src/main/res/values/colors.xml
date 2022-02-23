@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="charcoal_200">#4E6779</color>
+    <color name="charcoal_500">#233D4D</color>
+    <color name="charcoal_700">#001725</color>
+    <color name="sunglow_200">#FFFD78</color>
+    <color name="sunglow_500">#fCCa46</color>
+    <color name="sunglow_700">#C59A03</color>
 </resources>
