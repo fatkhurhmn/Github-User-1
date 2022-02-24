@@ -4,6 +4,7 @@ import academy.bangkit.githubuser.adapter.UserAdapter
 import academy.bangkit.githubuser.databinding.ActivityListUserBinding
 import academy.bangkit.githubuser.model.UserModel
 import academy.bangkit.githubuser.utils.DummyData
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,7 +28,9 @@ class ListUserActivity : AppCompatActivity() {
             setListUsers(DummyData.getListUsers(this@ListUserActivity))
             setOnItemClickCallback(object : UserAdapter.OnItemClickCallback {
                 override fun onItemClicked(user: UserModel) {
-                    Toast.makeText(this@ListUserActivity, user.name, Toast.LENGTH_LONG).show()
+                    val detailUserIntent = Intent(this@ListUserActivity, DetailUserActivity::class.java)
+                    detailUserIntent.putExtra(DetailUserActivity.EXTRA_DETAIL_USER, user)
+                    startActivity(detailUserIntent)
                 }
             })
         }
