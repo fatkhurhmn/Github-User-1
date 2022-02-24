@@ -8,6 +8,8 @@
     <string name="number_value">100</string>
     <string name="followers_label">Followers</string>
     <string name="following_label">Following</string>
+    <string name="share">Share</string>
+    <string name="message">%s (id: %s) tinggal di %s. Dia bekerja di %s. Dia sudah memiliki pengikut di GitHub sebanyak %s akun dan mengikuti sebanyak %s akun. Hingga kini Repository-nya di GitHub sudah %s</string>
     <string-array name="username">
         <item>JakeWharton</item>
         <item>amitshekhariitbhu</item>

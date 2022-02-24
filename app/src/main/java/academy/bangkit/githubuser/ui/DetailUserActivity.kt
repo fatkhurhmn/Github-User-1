@@ -1,7 +1,9 @@
 package academy.bangkit.githubuser.ui
 
+import academy.bangkit.githubuser.R
 import academy.bangkit.githubuser.databinding.ActivityDetailUserBinding
 import academy.bangkit.githubuser.model.UserModel
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
@@ -16,6 +18,33 @@ class DetailUserActivity : AppCompatActivity() {
 
         initToolbar()
         initUser()
+        actionButton()
+    }
+
+    private fun actionButton() {
+        val user = intent.getParcelableExtra<UserModel>(EXTRA_DETAIL_USER)
+
+        val message = resources.getString(
+            R.string.message,
+            user?.name,
+            user?.username,
+            user?.location,
+            user?.company,
+            user?.followers,
+            user?.following,
+            user?.repository,
+        )
+
+        val sendIntent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, message)
+            type = "text/plain"
+        }
+
+        binding.btnShare.setOnClickListener {
+            val shareIntent = Intent.createChooser(sendIntent, null)
+            startActivity(shareIntent)
+        }
     }
 
     private fun initToolbar() {
