@@ -74,9 +74,20 @@
             android:id="@+id/tv_repository_label"
             style="@style/Text.WithLabel.Small"
             android:text="@string/repository_label"
-            app:layout_constraintEnd_toStartOf="@id/tv_followers_label"
+            app:layout_constraintEnd_toStartOf="@id/barrier1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
+
+        <View
+            android:id="@+id/barrier1"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:background="@color/grey"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tv_repository_label"
+            app:layout_constraintEnd_toStartOf="@id/tv_followers_label"
+            app:layout_constraintStart_toEndOf="@id/tv_repository_label"
+            app:layout_constraintTop_toTopOf="@id/tv_repository_value" />
 
         <TextView
             android:id="@+id/tv_followers_value"
@@ -90,9 +101,20 @@
             android:id="@+id/tv_followers_label"
             style="@style/Text.WithLabel.Small"
             android:text="@string/followers_label"
-            app:layout_constraintEnd_toStartOf="@id/tv_following_label"
-            app:layout_constraintStart_toEndOf="@id/tv_repository_label"
+            app:layout_constraintEnd_toStartOf="@id/barrier2"
+            app:layout_constraintStart_toEndOf="@id/barrier1"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
+
+        <View
+            android:id="@+id/barrier2"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:background="@color/grey"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/tv_followers_label"
+            app:layout_constraintEnd_toStartOf="@id/tv_following_label"
+            app:layout_constraintStart_toEndOf="@id/tv_followers_label"
+            app:layout_constraintTop_toTopOf="@id/tv_followers_value" />
 
         <TextView
             android:id="@+id/tv_following_value"
@@ -105,9 +127,9 @@
         <TextView
             android:id="@+id/tv_following_label"
             style="@style/Text.WithLabel.Small"
-            android:text="@string/followers_label"
+            android:text="@string/following_label"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tv_followers_label"
+            app:layout_constraintStart_toEndOf="@id/barrier2"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

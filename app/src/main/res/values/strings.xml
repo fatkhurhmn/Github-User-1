@@ -7,6 +7,7 @@
     <string name="repository_label">Repository</string>
     <string name="number_value">100</string>
     <string name="followers_label">Followers</string>
+    <string name="following_label">Following</string>
     <string-array name="username">
         <item>JakeWharton</item>
         <item>amitshekhariitbhu</item>
