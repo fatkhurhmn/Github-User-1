@@ -7,6 +7,7 @@ import academy.bangkit.githubuser.utils.DummyData
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 
 class ListUserActivity : AppCompatActivity() {
@@ -27,7 +28,8 @@ class ListUserActivity : AppCompatActivity() {
             setListUsers(DummyData.getListUsers(this@ListUserActivity))
             setOnItemClickCallback(object : UserAdapter.OnItemClickCallback {
                 override fun onItemClicked(user: UserModel) {
-                    val detailUserIntent = Intent(this@ListUserActivity, DetailUserActivity::class.java)
+                    val detailUserIntent =
+                        Intent(this@ListUserActivity, DetailUserActivity::class.java)
                     detailUserIntent.putExtra(DetailUserActivity.EXTRA_DETAIL_USER, user)
                     startActivity(detailUserIntent)
                 }
