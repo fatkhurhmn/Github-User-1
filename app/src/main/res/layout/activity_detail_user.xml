@@ -22,18 +22,16 @@
 
         <TextView
             android:id="@+id/tv_detail_name"
-            style="@style/Text.Value.Black"
+            style="@style/Text.Value.Big"
             android:text="@string/name"
-            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_detail_username"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_detail_avatar" />
 
         <TextView
             android:id="@+id/tv_detail_username"
-            style="@style/Text.Value"
+            style="@style/Text.Value.Small"
             android:text="@string/username"
-            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_detail_avatar"
             app:layout_constraintTop_toBottomOf="@id/helper_line" />
@@ -48,11 +46,9 @@
 
         <TextView
             android:id="@+id/tv_detail_location"
-            style="@style/Text.Value.Black"
+            style="@style/Text.Value.Small.WithIcon"
             android:layout_marginTop="8dp"
-            android:gravity="center_vertical"
             android:text="@string/location"
-            android:textSize="16sp"
             app:drawableStartCompat="@drawable/ic_location"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,10 +56,8 @@
 
         <TextView
             android:id="@+id/tv_detail_company"
-            style="@style/Text.Value.Black"
-            android:gravity="center_vertical"
+            style="@style/Text.Value.Small.WithIcon"
             android:text="@string/company"
-            android:textSize="16sp"
             app:drawableStartCompat="@drawable/ic_company"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,69 +65,48 @@
 
         <TextView
             android:id="@+id/tv_repository_value"
-            style="@style/Text.Value.Black"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/repository_value"
-            android:textStyle="bold"
+            style="@style/Text.WithLabel.Big"
+            android:text="@string/number_value"
             app:layout_constraintEnd_toEndOf="@+id/tv_repository_label"
             app:layout_constraintStart_toStartOf="@+id/tv_repository_label"
             app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
 
         <TextView
             android:id="@+id/tv_repository_label"
-            style="@style/Text.Value"
-            android:gravity="center"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            style="@style/Text.WithLabel.Small"
             android:text="@string/repository_label"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/tv_followers_label"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
 
         <TextView
             android:id="@+id/tv_followers_value"
-            style="@style/Text.Value.Black"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/repository_value"
-            android:textStyle="bold"
+            style="@style/Text.WithLabel.Big"
+            android:text="@string/number_value"
             app:layout_constraintEnd_toEndOf="@+id/tv_followers_label"
             app:layout_constraintStart_toStartOf="@+id/tv_followers_label"
             app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
 
         <TextView
             android:id="@+id/tv_followers_label"
-            style="@style/Text.Value"
-            android:gravity="center"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            style="@style/Text.WithLabel.Small"
             android:text="@string/followers_label"
-            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/tv_following_label"
             app:layout_constraintStart_toEndOf="@id/tv_repository_label"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
 
         <TextView
             android:id="@+id/tv_following_value"
-            style="@style/Text.Value.Black"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/repository_value"
-            android:textStyle="bold"
+            style="@style/Text.WithLabel.Big"
+            android:text="@string/number_value"
             app:layout_constraintEnd_toEndOf="@+id/tv_following_label"
             app:layout_constraintStart_toStartOf="@+id/tv_following_label"
             app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
 
         <TextView
             android:id="@+id/tv_following_label"
-            style="@style/Text.Value"
-            android:gravity="center"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            style="@style/Text.WithLabel.Small"
             android:text="@string/followers_label"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_followers_label"
             app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
