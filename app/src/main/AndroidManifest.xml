@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GithubUser">
         <activity
+            android:name=".ui.DetailUserActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ListUserActivity"
             android:exported="true">
             <intent-filter>
