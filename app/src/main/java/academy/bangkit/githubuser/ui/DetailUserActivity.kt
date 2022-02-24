@@ -14,7 +14,17 @@ class DetailUserActivity : AppCompatActivity() {
         binding = ActivityDetailUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initToolbar()
         initUser()
+    }
+
+    private fun initToolbar() {
+        val user = intent.getParcelableExtra<UserModel>(EXTRA_DETAIL_USER)
+        supportActionBar?.apply {
+            title = user?.username
+            setDisplayHomeAsUpEnabled(true)
+            setDisplayShowHomeEnabled(true)
+        }
     }
 
     private fun initUser() {
@@ -30,8 +40,12 @@ class DetailUserActivity : AppCompatActivity() {
                 tvFollowingValue.text = user.following
                 tvRepositoryValue.text = user.repository
             }
-            supportActionBar?.title = user.username
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     companion object {
