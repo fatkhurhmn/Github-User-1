@@ -80,10 +80,7 @@
 
         <View
             android:id="@+id/barrier1"
-            android:layout_width="1dp"
-            android:layout_height="60dp"
-            android:background="@color/grey"
-            android:orientation="horizontal"
+            style="@style/Barrier"
             app:layout_constraintBottom_toBottomOf="@id/tv_repository_label"
             app:layout_constraintEnd_toStartOf="@id/tv_followers_label"
             app:layout_constraintStart_toEndOf="@id/tv_repository_label"
@@ -107,10 +104,7 @@
 
         <View
             android:id="@+id/barrier2"
-            android:layout_width="1dp"
-            android:layout_height="60dp"
-            android:background="@color/grey"
-            android:orientation="horizontal"
+            style="@style/Barrier"
             app:layout_constraintBottom_toBottomOf="@id/tv_followers_label"
             app:layout_constraintEnd_toStartOf="@id/tv_following_label"
             app:layout_constraintStart_toEndOf="@id/tv_followers_label"
