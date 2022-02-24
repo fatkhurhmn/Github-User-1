@@ -16,23 +16,28 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
 
+    <View
+        android:id="@+id/helper_line1"
+        style="@style/HelperLine"
+        app:layout_constraintBottom_toBottomOf="@id/img_item_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/img_item_profile" />
+
     <TextView
         android:id="@+id/tv_item_name"
         style="@style/Text.Value.Big"
         android:text="@string/name"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_item_username"
+        app:layout_constraintBottom_toTopOf="@+id/helper_line1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/img_item_profile"
-        app:layout_constraintTop_toTopOf="@+id/img_item_profile" />
+        app:layout_constraintStart_toEndOf="@id/img_item_profile" />
 
     <TextView
         android:id="@+id/tv_item_username"
         style="@style/Text.Value.Small"
         android:text="@string/username"
-        app:layout_constraintBottom_toBottomOf="@+id/img_item_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/img_item_profile"
-        app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+        app:layout_constraintTop_toBottomOf="@+id/helper_line1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,7 +24,7 @@
             android:id="@+id/tv_detail_name"
             style="@style/Text.Value.Big"
             android:text="@string/name"
-            app:layout_constraintBottom_toTopOf="@+id/tv_detail_username"
+            app:layout_constraintBottom_toTopOf="@+id/helper_line2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_detail_avatar" />
 
@@ -34,12 +34,11 @@
             android:text="@string/username"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_detail_avatar"
-            app:layout_constraintTop_toBottomOf="@id/helper_line" />
+            app:layout_constraintTop_toBottomOf="@id/helper_line2" />
 
         <View
-            android:id="@+id/helper_line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/helper_line2"
+            style="@style/HelperLine"
             app:layout_constraintBottom_toBottomOf="@id/img_detail_avatar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/img_detail_avatar" />
