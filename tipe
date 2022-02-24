@@ -1,0 +1,83 @@
+[33mcommit 8b2fe8a5748079c55aa5d96be6b7ff4bfd439913[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 17:55:40 2022 +0700
+
+    mengganti tipe data avatar
+
+[33mcommit af84ea10b6e5e0b8386e5a7a706f025781816360[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 17:53:29 2022 +0700
+
+    menambahkan viewbinding
+
+[33mcommit 9eaa5d2f2578437490b76b05f6b1217abf0b0430[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 17:53:10 2022 +0700
+
+    mengganti tipe data avatar
+
+[33mcommit f2095b87319b8189c709cc1240d816823d850877[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 17:35:52 2022 +0700
+
+    menambahkan user model
+
+[33mcommit aa16a198519b0c950498ee2ce580c3635bcde596[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 17:29:28 2022 +0700
+
+    membuat item user
+
+[33mcommit 18e956eab505b8fbc9a44c0e3fbebe60ba4e577c[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 16:57:34 2022 +0700
+
+    menambahkan library circle image view
+
+[33mcommit 02da58fb8bfe6146c17a0bac42fea9b52940b478[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 16:38:42 2022 +0700
+
+    menambahkan kotlin parcelize
+
+[33mcommit 5732a8ccd8d0b3792a9766a3c641b50800c6af73[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 16:24:43 2022 +0700
+
+    menambahkan style
+
+[33mcommit 03f0ad8d1a3fbe73d20da3bab85b50344433c1a1[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 16:16:58 2022 +0700
+
+    menghapus color grey
+
+[33mcommit 5a4ecfe24a7fb9d3e443aa83ae88b39fb11a2135[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 16:12:10 2022 +0700
+
+    menambahkan color grey
+
+[33mcommit 77d29b38330cdde2b84af87eeb48a366c12fdda9[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 15:47:57 2022 +0700
+
+    menambahkan color dan mengganti color primary dan color secondary
+
+[33mcommit 3cb329459064f6effc023bd489003a867d6d0dc9[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 14:04:27 2022 +0700
+
+    menambahkan resource avatar dan data dummy user
+
+[33mcommit 85c5ca6bbfce2026b5f97f0afc731e26829c5de0[m
+Author: Fatkhu Rohman <78679607+fatkhurhmn@users.noreply.github.com>
+Date:   Wed Feb 23 13:49:11 2022 +0700
+
+    Menambahkan kriteria aplikasi pada readme
+
+[33mcommit cb278645445b3b472baaea5f4ce4d72934dcc1b0[m
+Author: Muhammad Fatkhu Rohman <fatkhurohman019@gmail.com>
+Date:   Wed Feb 23 13:48:13 2022 +0700
+
+    init project
