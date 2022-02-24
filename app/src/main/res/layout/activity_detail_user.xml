@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.DetailUserActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_detail_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_detail_name"
+            style="@style/Text.Value.Black"
+            android:text="@string/name"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_detail_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_detail_avatar" />
+
+        <TextView
+            android:id="@+id/tv_detail_username"
+            style="@style/Text.Value"
+            android:text="@string/username"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_detail_avatar"
+            app:layout_constraintTop_toBottomOf="@id/helper_line" />
+
+        <View
+            android:id="@+id/helper_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/img_detail_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_detail_avatar" />
+
+        <TextView
+            android:id="@+id/tv_detail_location"
+            style="@style/Text.Value.Black"
+            android:layout_marginTop="8dp"
+            android:text="@string/location"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_detail_avatar" />
+
+        <TextView
+            android:id="@+id/tv_detail_company"
+            style="@style/Text.Value.Black"
+            android:text="@string/company"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_company"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_location" />
+
+
+        <TextView
+            android:id="@+id/tv_repository_value"
+            style="@style/Text.Value.Black"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/repository_value"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_repository_label"
+            app:layout_constraintStart_toStartOf="@+id/tv_repository_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
+
+        <TextView
+            android:id="@+id/tv_repository_label"
+            style="@style/Text.Value"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/repository_label"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_followers_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
+
+        <TextView
+            android:id="@+id/tv_followers_value"
+            style="@style/Text.Value.Black"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/repository_value"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_followers_label"
+            app:layout_constraintStart_toStartOf="@+id/tv_followers_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
+
+        <TextView
+            android:id="@+id/tv_followers_label"
+            style="@style/Text.Value"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/followers_label"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_following_label"
+            app:layout_constraintStart_toEndOf="@id/tv_repository_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
+
+        <TextView
+            android:id="@+id/tv_following_value"
+            style="@style/Text.Value.Black"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/repository_value"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_following_label"
+            app:layout_constraintStart_toStartOf="@+id/tv_following_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_company" />
+
+        <TextView
+            android:id="@+id/tv_following_label"
+            style="@style/Text.Value"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/followers_label"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_followers_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_repository_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
