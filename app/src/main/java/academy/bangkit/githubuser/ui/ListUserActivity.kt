@@ -7,7 +7,6 @@ import academy.bangkit.githubuser.utils.DummyData
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 
 class ListUserActivity : AppCompatActivity() {
