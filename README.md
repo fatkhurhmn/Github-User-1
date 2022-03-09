@@ -14,3 +14,8 @@ Aplikasi daftar pengguna GitHub
   * Name
   * Avatar
 * Menggunakan Parcelable sebagai interface dari obyek data yang akan dikirimkan antar Activity.
+
+**Screenshoot**  
+![image](https://user-images.githubusercontent.com/78679607/157384909-2fcb6f2c-a9ac-4ddf-90f3-cd8c712463e1.png)
+![image](https://user-images.githubusercontent.com/78679607/157385012-c775e7b1-d7c0-48c1-b453-163859de537f.png)
+
